@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn | Web API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="signInContainer">
+      <form action="" id="SignInForm">
+        <h1 id="SignInHeading">Sign-in</h1>
+        <label for="signInEmail">Email</label>
+        <br />
+        <input type="email" id="signInEmail" required />
+        <br />
+        <label for="signInPassword">Password</label>
+        <br />
+        <input type="password" id="signInPassword" required />
+        <br />
+        <button type="submit" id="signInButton" onclick="checkSignInInfo()">
+          SignIn
+        </button>
+        <p><a href="signUp.html">Dont have an account ! SignUp</a></p>
+      </form>
+    </div>
+    <script src="program.js"></script>
+  </body>
+</html>

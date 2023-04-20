@@ -1,0 +1,67 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#signUpContainer,
+#signInContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+
+  width: 20vw;
+  height: fit-content;
+  margin: 10vh auto;
+  padding: 10px;
+}
+
+#signUpContainer label,
+#signInContainer label {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+#signUpContainer h1,
+#signInContainer h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+#signUpContainer input,
+#signInSubmit,
+#signInButton,
+#signInContainer input,
+select {
+  height: 30px;
+  width: 95%;
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: large;
+}
+
+#signInButton,
+#signUpButton {
+  height: 40px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  font-size: large;
+  width: 95%;
+  margin-left: 0.5rem;
+}
+
+#signUpContainer p,
+#signInContainer p {
+  font-family: sans-serif;
+
+  text-align: center;
+  font-size: large;
+}
+
+#signUpContainer a,
+#signInContainer a {
+  color: rgb(17, 192, 250);
+  text-decoration: none;
+}

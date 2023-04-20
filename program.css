@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(61, 61, 61);
+}
+
+table,
+th {
+  border: 2px solid black;
+  background-color: white;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.dataTable {
+  margin: 20px auto;
+}
+
+.non-active {
+  display: none;
+}
+
+th {
+  background-color: lightblue;
+  font-size: 1.2rem;
+}
+
+.functionButton {
+  font-size: 2rem;
+  padding: 10px;
+  background-color: black;
+  margin: auto 2vw;
+  border: black;
+  border-color: darkgrey;
+  color: white;
+  cursor: pointer;
+}
+
+.functionButton:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.buttonContainer {
+  background-color: black;
+  padding: 50px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#toBeUpdatedform,
+#insertForm,
+#deleteForm {
+  font-size: 1.2rem;
+  margin: 100px auto;
+  height: auto;
+  width: fit-content;
+}
+
+input {
+  height: 50px;
+  width: 500px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.submit {
+  height: 50px;
+  width: 500px;
+  margin-top: 30px;
+  background-color: green;
+  color: white;
+  font-size: 2rem;
+}
+
+td {
+  border: 1px solid black;
+}
+
+.formHeadings {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#sortButton {
+  height: 50px;
+  width: 200px;
+  margin-right: 10px;
+  background-color: goldenrod;
+  font-size: 1.3rem;
+}
+
+#searchBox {
+  width: 200px;
+  margin-bottom: 0;
+}
+
+#searchButton {
+  background-color: black;
+  height: 50px;
+  font-size: larger;
+  margin: 5px;
+  border: black solid;
+}
+
+.searchedElement {
+  background-color: yellow;
+}

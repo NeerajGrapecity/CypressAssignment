@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Web API</title>
+    <link rel="stylesheet" href="program.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="buttonContainer">
+      <button
+        class="functionButton"
+        id="getDataButton"
+        onclick="switchToGetData()"
+      >
+        Click here to generate Data
+      </button>
+      <button
+        class="functionButton"
+        id="updateDataButton"
+        onclick="switchToUpdate()"
+      >
+        Click Here to update
+      </button>
+      <button
+        class="functionButton"
+        id="insertDataButton"
+        onclick="switchToInsert()"
+      >
+        Click Here to Insert
+      </button>
+      <button
+        class="functionButton"
+        id="deleteDataButton"
+        onclick="switchToDelete()"
+      >
+        Click Here to Delete
+      </button>
+      <button id="sortButton" class="non-active" onclick="sortTable()">
+        Sort
+      </button>
+      <input type="text" name="" id="searchBox" placeholder="Search" />
+      <button id="searchButton" onclick="searchName()">
+        <i class="fa fa-search" style="color: #ffffff"></i>
+      </button>
+    </div>
+
+    <div id="container" class="non-active">
+      <button id="sortButton" class="non-active" onclick="sortTable()">
+        Sort
+      </button>
+      <table id="tableData"></table>
+    </div>
+    <div id="container2" class="non-active">
+      <form id="toBeUpdatedForm" class="non-active" required>
+        <h2 class="formHeadings">
+          Enter the data of Tourist <br />
+          You want to update!
+        </h2>
+        <label for="id">Id</label>
+        <br />
+        <input type="number" id="toBeUpdatedId" required />
+        <br />
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="toBeUpdatedName" />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="toBeUpdatedMail" />
+        <br />
+        <button class="submit" type="submit" onclick="updateData()">
+          Submit
+        </button>
+      </form>
+
+      <form id="updatedForm" class="non-active">
+        <h2 class="formHeadings">Enter the updated Data!</h2>
+        <label for="id">Id</label>
+        <br />
+        <input type="number" />
+        <br />
+        <label for="name">Name</label>
+        <br />
+        <input type="text" />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" />
+        <br />
+        <label for="location">Location</label>
+        <br />
+        <input type="text" />
+        <br />
+        <button class="submit" type="submit">Update</button>
+      </form>
+    </div>
+    <div id="container3" class="non-active insertcontainer">
+      <form id="insertForm" class="">
+        <h2 class="formHeadings">Enter the inserted Data!</h2>
+        <label for="name" required>Name</label>
+        <br />
+        <input type="text" id="insertedName" required />
+        <br />
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="insertedMail" required />
+        <br />
+        <label for="location">Location</label>
+        <br />
+        <input type="text" id="insertedLocation" required />
+        <br />
+        <button
+          class="submit"
+          type="submit"
+          style="background-color: #0a0a23"
+          onclick="insertData()"
+        >
+          Insert
+        </button>
+      </form>
+    </div>
+    <div id="container4" class="non-active">
+      <form id="deleteForm">
+        <h2 class="formHeadings">Enter the Id which you want to Delete!</h2>
+        <label for="Id">Id</label>
+        <br />
+        <input type="number" id="deleteId" />
+        <br />
+        <button
+          class="submit"
+          disabled="disabled"
+          style="background-color: grey"
+          onclick="deleteData()"
+        >
+          Delete
+        </button>
+      </form>
+    </div>
+
+    <script src="program.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up | WebApi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="signUpContainer">
+      <form action="" id="SignUpForm">
+        <h1 id="SignUpHeading">Sign-up</h1>
+        <label for="Email" class="labels">Email</label>
+        <br />
+        <input type="email" id="Email" required />
+        <br />
+        <label for="password" class="labels">Password</label>
+        <br />
+        <input type="password" id="password" required />
+        <br />
+        <label for="confirmPassword" class="labels">Confirm Password</label>
+        <br />
+        <input type="password" id="confirmPassword" required />
+        <br />
+        <label for="role">Role</label>
+        <select name="" id="role">
+          <option value="admin">admin</option>
+          <option value="user">user</option>
+        </select>
+        <button id="signUpButton" onclick="signUpCheck()">SignUp</button>
+        <p><a href="signIn.html">Already have an Account ? SignIn</a></p>
+      </form>
+    </div>
+    <script src="program.js"></script>
+  </body>
+</html>
